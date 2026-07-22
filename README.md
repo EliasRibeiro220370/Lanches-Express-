@@ -76,7 +76,7 @@ Elias Ribeiro
 
 👨‍💻 Desenvolvedor Front-end especializado em React e aplicações web modernas.
 --
-
+##
 📜 Licença.
 --
 Versão demonstrativa criada exclusivamente para fins de portfólio.
