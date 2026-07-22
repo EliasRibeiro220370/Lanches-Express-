@@ -83,6 +83,6 @@ Versão demonstrativa criada exclusivamente para fins de portfólio.
 
 Algumas funcionalidades e informações foram adaptadas para preservar dados comerciais.
 
-⭐ Gostou do projeto?
+Gostou do projeto?
 
 Deixe uma ⭐ no repositório.
