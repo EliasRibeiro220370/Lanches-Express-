@@ -53,7 +53,6 @@ Tablets,
 Notebooks,
 Desktop.
 
-##
 📱 Responsividade Compatível com:
 --
 HTML semântico,
@@ -61,7 +60,6 @@ Navegação intuitiva,
 Contraste adequado,
 Interface adaptável.
 
-##
 ♿ Acessibilidade.
 --
 Build otimizado com Vite,
@@ -70,13 +68,12 @@ Imagens otimizadas,
 Código organizado.
 ⚡ Performance.
 --
-##
+
 👨‍💻 Desenvolvedor Front-end especializado em React e aplicações web modernas.
 --
 Elias Ribeiro
 📧 contato@inovacaodigital.tec.br
 
-##
 📜 Licença.
 --
 Versão demonstrativa criada exclusivamente para fins de portfólio.
