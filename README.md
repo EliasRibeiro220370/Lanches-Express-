@@ -67,6 +67,7 @@ Build otimizado com Vite,
 Componentização,
 Imagens otimizadas,
 Código organizado.
+
 ⚡ Performance.
 --
 
