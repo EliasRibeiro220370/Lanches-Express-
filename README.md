@@ -46,12 +46,12 @@ Aplicação desenvolvida utilizando componentes reutilizáveis, organização mo
 📱 Responsividade Compatível com:
 --
 
-##
 Smartphones
 Tablets
 Notebooks
 Desktop
 
+##
 ♿ Acessibilidade
 --
 HTML semântico,
