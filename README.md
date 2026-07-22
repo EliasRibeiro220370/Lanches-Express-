@@ -51,7 +51,7 @@ Smartphones
 Tablets
 Notebooks
 Desktop
---
+
 ♿ Acessibilidade
 
 HTML semântico,
