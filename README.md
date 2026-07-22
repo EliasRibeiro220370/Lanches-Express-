@@ -60,6 +60,7 @@ Contraste adequado,
 Interface adaptável.
 
 ⚡ Performance
+--
 Build otimizado com Vite,
 Componentização,
 Imagens otimizadas,
