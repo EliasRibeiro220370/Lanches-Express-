@@ -18,7 +18,7 @@ Para preservar informações comerciais e a privacidade do cliente, alguns dados
 
 Observação: Este repositório representa uma versão preparada exclusivamente para demonstração em portfólio. Algumas informações e recursos foram modificados para preservar a privacidade do cliente.
 
-🌐 Projeto Original Funcionalidades.
+🌐 Projeto Original.
 --
 🍔 Cardápio Digital
 📂 Categorias de produtos
@@ -31,7 +31,7 @@ Observação: Este repositório representa uma versão preparada exclusivamente 
 🧩 Componentização
 🚀 Navegação intuitiva
 
-🛠️ Tecnologias.
+Funcionalidades.
 --
 React
 TypeScript
@@ -41,11 +41,11 @@ Git
 GitHub
 NPM
 
-🏗️ Arquitetura
+🛠️ Tecnologias.
 --
 Aplicação desenvolvida utilizando componentes reutilizáveis, organização modular e foco em escalabilidade.
 
-📱 Responsividade Compatível com:
+🏗️ Arquitetura.
 --
 
 Smartphones,
@@ -54,7 +54,7 @@ Notebooks,
 Desktop.
 
 ##
-♿ Acessibilidade.
+📱 Responsividade Compatível com:
 --
 HTML semântico,
 Navegação intuitiva,
@@ -62,13 +62,14 @@ Contraste adequado,
 Interface adaptável.
 
 ##
-⚡ Performance.
+♿ Acessibilidade.
 --
 Build otimizado com Vite,
 Componentização,
 Imagens otimizadas,
 Código organizado.
-
+⚡ Performance.
+--
 ##
 👨‍💻 Desenvolvedor Front-end especializado em React e aplicações web modernas.
 --
