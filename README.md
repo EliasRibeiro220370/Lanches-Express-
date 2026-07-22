@@ -37,42 +37,42 @@ Funcionalidades:
 
 Tecnologias:
 
-React
-TypeScript
-Vite
-Tailwind CSS
-Git
-GitHub
-NPM
+React,
+TypeScript,
+Vite,
+Tailwind CSS,
+Git,
+GitHub,
+NPM.
 
-🏗️ Arquitetura:
+Arquitetura:
 
 Aplicação desenvolvida utilizando componentes reutilizáveis, organização modular e foco em escalabilidade.
 
-📱 Responsividade Compatível com:
+Responsividade Compatível com:
 
-Smartphones
-Tablets
-Notebooks
-Desktop
+Smartphones,
+Tablets,
+Notebooks,
+Desktop.
 
-♿ Acessibilidade
+Acessibilidade:
 
-HTML semântico
-Navegação intuitiva
-Contraste adequado
-Interface adaptável
+HTML semântico,
+Navegação intuitiva,
+Contraste adequado,
+Interface adaptável.
 
-⚡ Performance
+Performance
 
-Build otimizado com Vite
-Componentização
-Imagens otimizadas
-Código organizado
+Build otimizado com Vite,
+Componentização,
+Imagens otimizadas,
+Código organizado.
 
-👨‍💻 Desenvolvedor Front-end especializado em React e aplicações web modernas.
+Desenvolvedor Front-end especializado em React e aplicações web modernas.
 
-Elias Ribeiro
+Elias Ribeiro.
 
 📧 contato@inovacaodigita.tec.br
 
