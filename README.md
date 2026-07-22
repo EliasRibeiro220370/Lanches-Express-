@@ -51,8 +51,9 @@ Smartphones
 Tablets
 Notebooks
 Desktop
-♿ Acessibilidade
 --
+♿ Acessibilidade
+
 HTML semântico,
 Navegação intuitiva,
 Contraste adequado,
