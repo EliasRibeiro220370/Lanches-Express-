@@ -69,7 +69,7 @@ cd lanches-express-showcase
 npm install
 
 npm run dev
-👨‍💻 Desenvolvedor
+#👨‍💻 Desenvolvedor
 
 Elias Ribeiro
 
