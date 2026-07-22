@@ -75,7 +75,7 @@ Elias Ribeiro
 📧 contato@inovacaodigital.tec.br
 
 📜 Licença
-
+--
 Versão demonstrativa criada exclusivamente para fins de portfólio.
 
 Algumas funcionalidades e informações foram adaptadas para preservar dados comerciais.
