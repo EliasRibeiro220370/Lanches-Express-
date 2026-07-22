@@ -39,8 +39,9 @@ Tailwind CSS
 Git
 GitHub
 NPM
-🏗️ Arquitetura
 
+🏗️ Arquitetura
+--
 Aplicação desenvolvida utilizando componentes reutilizáveis, organização modular e foco em escalabilidade.
 
 📱 Responsividade Compatível com:
