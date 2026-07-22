@@ -1,6 +1,6 @@
 README
 
-<p align="center"> <img width="1774" alt="Lanches Express Showcase" src="COLOQUE_AQUI_O_BANNER" /> </p>
+<p align="center"> <img width="1536" height="1024" alt="Image" src="https://github.com/user-attachments/assets/c27a1c86-3ab0-47ba-99d5-13692ec06c8c" /> </p>
 
 <h1 align="center">🍔 Lanches Express Showcase</h1>
 
