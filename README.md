@@ -43,10 +43,10 @@ NPM
 
 Aplicação desenvolvida utilizando componentes reutilizáveis, organização modular e foco em escalabilidade
 
-📱 Responsividade
+📱 Responsividade Compatível com:
+--
 
-Compatível com:
-
+##
 Smartphones
 Tablets
 Notebooks
