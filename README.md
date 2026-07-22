@@ -14,7 +14,6 @@ Para preservar informações comerciais e a privacidade do cliente, alguns dados
 
 🌐 Projeto Original
 --
-A versão original deste projeto encontra-se disponível no endereço abaixo:
 
 🔗 COLOQUE_AQUI_A_URL_DO_PROJETO_ORIGINAL
 
