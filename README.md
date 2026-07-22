@@ -5,7 +5,6 @@
 <p align="center"> Cardápio Digital desenvolvido com React, TypeScript, Vite e Tailwind CSS para demonstrar uma solução moderna voltada para restaurantes, hamburguerias e lanchonetes. </p>
 
 <p align="center"> 🚀 Desenvolvido por <strong>Elias Ribeiro</strong> </p>
---
 
 📌 Sobre este projeto
 
@@ -13,14 +12,13 @@ Este repositório apresenta uma versão demonstrativa de um cardápio digital de
 
 Para preservar informações comerciais e a privacidade do cliente, alguns dados, imagens e configurações foram adaptados para esta versão de portfólio.
 
-🌐 Projeto Original
 --
 
 🔗 COLOQUE_AQUI_A_URL_DO_PROJETO_ORIGINAL
 
 Observação: Este repositório representa uma versão preparada exclusivamente para demonstração em portfólio. Algumas informações e recursos foram modificados para preservar a privacidade do cliente.
 
-Funcionalidades.
+🌐 Projeto Original Funcionalidades.
 --
 🍔 Cardápio Digital
 📂 Categorias de produtos
