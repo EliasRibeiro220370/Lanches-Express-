@@ -24,16 +24,16 @@ Observação: Este repositório representa uma versão preparada exclusivamente 
 
 Funcionalidades:
 
-🍔 Cardápio Digital
-📂 Categorias de produtos
-🔍 Visualização dos itens
-📱 Layout Responsivo
-♿ Interface acessível
-⚡ Alto desempenho
-💬 Botão para WhatsApp
-🎨 Interface moderna
-🧩 Componentização
-🚀 Navegação intuitiva
+🍔 Cardápio Digital,
+📂 Categorias de produtos,
+🔍 Visualização dos itens,
+📱 Layout Responsivo,
+♿ Interface acessível,
+⚡ Alto desempenho,
+💬 Botão para WhatsApp,
+🎨 Interface moderna,
+🧩 Componentização,
+🚀 Navegação intuitiva.
 
 Tecnologias:
 
