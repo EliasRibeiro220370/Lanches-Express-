@@ -70,13 +70,11 @@ npm install
 
 npm run dev
 
-👨‍💻 Desenvolvedor
+👨‍💻 Desenvolvedor Front-end especializado em React e aplicações web modernas.
 --
 Elias Ribeiro
 
-Desenvolvedor Front-end especializado em React e aplicações web modernas.
-
-📧 contato@seudominio.com.br
+📧 contato@inovacaodigital.tec.br
 
 📜 Licença
 
