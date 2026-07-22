@@ -18,7 +18,7 @@ Para preservar informações comerciais e a privacidade do cliente, alguns dados
 
 A versão original deste projeto encontra-se disponível no endereço abaixo:
 
-🔗https://www.lanches-express.vercel.app
+🔗https://lanches-express.vercel.app
 
 Observação: Este repositório representa uma versão preparada exclusivamente para demonstração em portfólio. Algumas informações e recursos foram modificados para preservar a privacidade do cliente.
 
