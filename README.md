@@ -52,7 +52,7 @@ Notebooks,
 Desktop.
 
 ##
-♿ Acessibilidade
+♿ Acessibilidade.
 --
 HTML semântico,
 Navegação intuitiva,
@@ -60,7 +60,7 @@ Contraste adequado,
 Interface adaptável.
 
 ##
-⚡ Performance
+⚡ Performance.
 --
 Build otimizado com Vite,
 Componentização,
@@ -68,19 +68,16 @@ Imagens otimizadas,
 Código organizado.
 
 ##
-👨‍💻 Desenvolvedor Front-end especializado em React e aplicações web modernas
+👨‍💻 Desenvolvedor Front-end especializado em React e aplicações web modernas.
 --
 Elias Ribeiro
-
 📧 contato@inovacaodigital.tec.br
 
 ##
-📜 Licença
+📜 Licença.
 --
 Versão demonstrativa criada exclusivamente para fins de portfólio.
-
 Algumas funcionalidades e informações foram adaptadas para preservar dados comerciais.
 
 Gostou do projeto?
-
 Deixe uma ⭐ no repositório.
