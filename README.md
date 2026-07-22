@@ -61,11 +61,12 @@ Interface adaptável.
 
 ⚡ Performance
 --
-##Build otimizado com Vite,
+Build otimizado com Vite,
 Componentização,
 Imagens otimizadas,
 Código organizado.
 
+##
 👨‍💻 Desenvolvedor Front-end especializado em React e aplicações web modernas.
 --
 Elias Ribeiro
