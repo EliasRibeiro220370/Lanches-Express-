@@ -73,6 +73,7 @@ Código organizado.
 
 Elias Ribeiro
 📧 contato@inovacaodigital.tec.br
+
 👨‍💻 Desenvolvedor Front-end especializado em React e aplicações web modernas.
 
 📜 Licença.
