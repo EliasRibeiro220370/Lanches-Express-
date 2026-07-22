@@ -53,12 +53,13 @@ Notebooks
 Desktop
 
 ♿ Acessibilidade
-
+--
 HTML semântico,
 Navegação intuitiva,
 Contraste adequado,
 Interface adaptável.
 
+##
 ⚡ Performance
 --
 Build otimizado com Vite,
