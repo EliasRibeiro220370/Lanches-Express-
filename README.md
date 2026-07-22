@@ -41,7 +41,7 @@ GitHub
 NPM
 🏗️ Arquitetura
 
-Aplicação desenvolvida utilizando componentes reutilizáveis, organização modular e foco em escalabilidade.
+Aplicação desenvolvida utilizando componentes reutilizáveis, organização modular e foco em escalabilidade
 
 📱 Responsividade
 
