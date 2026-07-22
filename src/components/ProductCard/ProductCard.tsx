@@ -18,9 +18,18 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onSelectProdu
     : 0;
 
   return (
-    <div
+    <article
+      role="article"
+      tabIndex={0}
       onClick={() => onSelectProduct(product)}
-      className="group relative bg-neutral-800/90 hover:bg-neutral-800 border border-neutral-700/80 hover:border-neutral-600 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col cursor-pointer"
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onSelectProduct(product);
+        }
+      }}
+      aria-label={`${product.name}, ${formatCurrency(product.price)}`}
+      className="group relative bg-neutral-800/90 hover:bg-neutral-800 border border-neutral-700/80 hover:border-neutral-600 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-400"
     >
       {/* Product Image Section */}
       <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-900">
@@ -64,24 +73,26 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onSelectProdu
             e.stopPropagation();
             toggleFavorite(product.id);
           }}
-          className="absolute top-3 right-3 z-10 w-8 h-8 rounded-full bg-neutral-900/70 hover:bg-neutral-900 backdrop-blur border border-neutral-700/60 flex items-center justify-center transition-all"
+          aria-label={isFavorite ? `Remover ${product.name} dos favoritos` : `Adicionar ${product.name} aos favoritos`}
+          className="absolute top-3 right-3 z-10 w-8 h-8 rounded-full bg-neutral-900/70 hover:bg-neutral-900 backdrop-blur border border-neutral-700/60 flex items-center justify-center transition-all focus:outline-none focus:ring-2 focus:ring-amber-400"
           title={isFavorite ? 'Remover dos favoritos' : 'Favoritar'}
         >
           <Heart
             className={`w-4 h-4 transition-colors ${
               isFavorite ? 'fill-pink-500 text-pink-500' : 'text-neutral-300 hover:text-white'
             }`}
+            aria-hidden="true"
           />
         </button>
 
         {/* Prep Time & Rating Bottom Left/Right on Image */}
         <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[11px] font-semibold text-neutral-300 z-10">
           <span className="flex items-center gap-1 bg-neutral-950/70 px-2 py-0.5 rounded-md backdrop-blur">
-            <Clock className="w-3 h-3 text-amber-400" />
+            <Clock className="w-3 h-3 text-amber-400" aria-hidden="true" />
             {product.prepTimeMinutes} min
           </span>
           <span className="flex items-center gap-1 bg-neutral-950/70 px-2 py-0.5 rounded-md backdrop-blur text-yellow-400">
-            <Star className="w-3 h-3 fill-yellow-400" />
+            <Star className="w-3 h-3 fill-yellow-400" aria-hidden="true" />
             {product.rating}
           </span>
         </div>
@@ -116,13 +127,14 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onSelectProdu
               e.stopPropagation();
               onSelectProduct(product);
             }}
-            className="flex items-center gap-1.5 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white font-bold text-xs px-3.5 py-2 rounded-xl shadow-md transition-all active:scale-95 shrink-0"
+            aria-label={`Personalizar e adicionar ${product.name} por ${formatCurrency(product.price)}`}
+            className="flex items-center gap-1.5 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white font-bold text-xs px-3.5 py-2 rounded-xl shadow-md transition-all active:scale-95 shrink-0 focus:outline-none focus:ring-2 focus:ring-amber-400"
           >
-            <Plus className="w-4 h-4" />
+            <Plus className="w-4 h-4" aria-hidden="true" />
             <span>Adicionar</span>
           </button>
         </div>
       </div>
-    </div>
+    </article>
   );
 };

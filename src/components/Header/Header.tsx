@@ -1,7 +1,8 @@
 import React from 'react';
-import { Search, ShoppingBag, Clock, Settings, MapPin, Heart, PackageCheck } from 'lucide-react';
+import { Search, ShoppingBag, Clock, Settings, MapPin, Heart, PackageCheck, MessageCircle } from 'lucide-react';
 import { useStore } from '../../hooks/useStore';
 import { useCart } from '../../hooks/useCart';
+import { cleanPhoneForWa } from '../../utils/formatters';
 
 export const Header: React.FC = () => {
   const {
@@ -45,11 +46,23 @@ export const Header: React.FC = () => {
         <div className="flex items-center justify-between gap-4">
           
           {/* Logo & Store Name */}
-          <div className="flex items-center gap-3 cursor-pointer select-none" onClick={handleLogoClick}>
+          <div
+            role="button"
+            tabIndex={0}
+            onClick={handleLogoClick}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                handleLogoClick();
+              }
+            }}
+            aria-label={`Ver todos os produtos de ${store.name}`}
+            className="flex items-center gap-3 cursor-pointer select-none focus:outline-none focus:ring-2 focus:ring-red-500 rounded-2xl p-1"
+          >
             <div className="relative">
               <img
                 src={store.logoUrl}
-                alt={store.name}
+                alt={`Logo de ${store.name}`}
                 referrerPolicy="no-referrer"
                 className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl object-cover ring-2 ring-red-500/40 shadow-md active:scale-95 transition-transform"
               />
@@ -71,12 +84,12 @@ export const Header: React.FC = () => {
               </div>
               <div className="flex items-center gap-2 text-xs text-neutral-400 mt-0.5">
                 <span className="flex items-center gap-1">
-                  <Clock className="w-3 h-3 text-amber-400" />
+                  <Clock className="w-3 h-3 text-amber-400" aria-hidden="true" />
                   {store.openingHours}
                 </span>
-                <span className="hidden md:inline">•</span>
+                <span className="hidden md:inline" aria-hidden="true">•</span>
                 <span className="hidden md:flex items-center gap-1 text-neutral-400 truncate max-w-[180px]">
-                  <MapPin className="w-3 h-3 text-red-400 shrink-0" />
+                  <MapPin className="w-3 h-3 text-red-400 shrink-0" aria-hidden="true" />
                   {store.neighborhoodCity}
                 </span>
               </div>
@@ -85,17 +98,19 @@ export const Header: React.FC = () => {
 
           {/* Search Bar - Center Desktop */}
           <div className="hidden md:flex flex-1 max-w-md mx-4 relative">
-            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400" />
+            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400" aria-hidden="true" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Buscar x-bacon, batata, refrigerante..."
+              aria-label="Buscar produtos no cardápio"
               className="w-full pl-10 pr-4 py-2 text-sm bg-neutral-800/80 border border-neutral-700/80 rounded-xl text-white placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-red-500/50 focus:border-red-500 transition-all"
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery('')}
+                aria-label="Limpar busca"
                 className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-neutral-400 hover:text-white"
               >
                 Limpar
@@ -109,10 +124,11 @@ export const Header: React.FC = () => {
             {hasActiveOrders && (
               <button
                 onClick={() => setIsOrderTrackerOpen(true)}
+                aria-label={`Acompanhar meus pedidos (${orders.length} ativo)`}
                 className="flex items-center gap-1.5 px-3 py-2 text-xs font-medium bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 border border-amber-500/30 rounded-xl transition-all animate-pulse"
                 title="Acompanhar Pedidos"
               >
-                <PackageCheck className="w-4 h-4 text-amber-400" />
+                <PackageCheck className="w-4 h-4 text-amber-400" aria-hidden="true" />
                 <span className="hidden sm:inline">Meus Pedidos ({orders.length})</span>
               </button>
             )}
@@ -122,19 +138,33 @@ export const Header: React.FC = () => {
               <div
                 className="hidden lg:flex items-center gap-1 px-2.5 py-2 text-xs bg-neutral-800 text-pink-400 rounded-xl border border-neutral-700"
                 title="Favoritos"
+                aria-label={`${favorites.length} itens favoritos`}
               >
-                <Heart className="w-3.5 h-3.5 fill-pink-500 text-pink-500" />
+                <Heart className="w-3.5 h-3.5 fill-pink-500 text-pink-500" aria-hidden="true" />
                 <span>{favorites.length}</span>
               </div>
             )}
 
+            {/* WhatsApp Button next to Cart Icon */}
+            <a
+              href={`https://wa.me/${cleanPhoneForWa(store.whatsappNumber)}?text=${encodeURIComponent(`Olá! Gostaria de tirar dúvidas sobre o cardápio da ${store.name}.`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Entrar em contato via WhatsApp"
+              className="flex items-center justify-center bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 text-white p-2.5 rounded-xl border border-emerald-500/40 shadow-lg shadow-emerald-900/30 transition-all active:scale-95 shrink-0 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+              title="Atendimento WhatsApp"
+            >
+              <MessageCircle className="w-5 h-5 fill-emerald-600 stroke-white" aria-hidden="true" />
+            </a>
+
             {/* Cart Button Header */}
             <button
               onClick={() => setIsCartOpen(true)}
-              className="relative flex items-center gap-2 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white font-semibold px-4 py-2 rounded-xl shadow-lg shadow-red-900/30 transition-all active:scale-95"
+              aria-label={`Abrir Sacola de compras (${totalItemsCount} ${totalItemsCount === 1 ? 'item' : 'itens'})`}
+              className="relative flex items-center justify-center gap-1.5 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white font-semibold p-2.5 sm:px-4 sm:py-2 rounded-xl shadow-lg shadow-red-900/30 transition-all active:scale-95 shrink-0 focus:outline-none focus:ring-2 focus:ring-red-400"
             >
-              <ShoppingBag className="w-5 h-5" />
-              <span className="hidden sm:inline text-sm">Carrinho</span>
+              <ShoppingBag className="w-5 h-5" aria-hidden="true" />
+              <span className="hidden sm:inline text-sm">Sacola</span>
               {totalItemsCount > 0 && (
                 <span className="bg-white text-red-600 text-xs font-extrabold w-5 h-5 rounded-full flex items-center justify-center shadow">
                   {totalItemsCount}
@@ -146,18 +176,20 @@ export const Header: React.FC = () => {
 
         {/* Mobile Search Bar Row */}
         <div className="mt-3 md:hidden relative">
-          <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400" />
+          <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400" aria-hidden="true" />
           <input
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Buscar por lanches, bebidas ou acompanhamentos..."
+            aria-label="Buscar produtos no cardápio"
             className="w-full pl-10 pr-4 py-2 text-sm bg-neutral-800 border border-neutral-700 rounded-xl text-white placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-red-500"
           />
           {searchQuery && (
             <button
               onClick={() => setSearchQuery('')}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-neutral-400"
+              aria-label="Limpar busca"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-neutral-400 hover:text-white"
             >
               Limpar
             </button>

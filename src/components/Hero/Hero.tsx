@@ -99,9 +99,11 @@ export const Hero: React.FC = () => {
 
               <div className="space-y-2.5">
                 {/* Coupon 1 */}
-                <div
+                <button
+                  type="button"
                   onClick={() => handleCopyCoupon('LANCHE10')}
-                  className="group cursor-pointer bg-neutral-900/80 hover:bg-neutral-900 border border-dashed border-amber-500/40 hover:border-amber-500 p-3 rounded-xl flex items-center justify-between transition-all"
+                  aria-label="Aplicar cupom LANCHE10 de 10% de desconto"
+                  className="w-full text-left group cursor-pointer bg-neutral-900/80 hover:bg-neutral-900 border border-dashed border-amber-500/40 hover:border-amber-500 p-3 rounded-xl flex items-center justify-between transition-all focus:outline-none focus:ring-2 focus:ring-amber-400"
                 >
                   <div>
                     <div className="flex items-center gap-2">
@@ -113,12 +115,14 @@ export const Hero: React.FC = () => {
                   <span className="text-xs text-amber-400 font-semibold group-hover:underline shrink-0">
                     {copiedCoupon === 'LANCHE10' ? '✓ Aplicado' : 'Aplicar'}
                   </span>
-                </div>
+                </button>
 
                 {/* Coupon 2 */}
-                <div
+                <button
+                  type="button"
                   onClick={() => handleCopyCoupon('FRETEGRATIS')}
-                  className="group cursor-pointer bg-neutral-900/80 hover:bg-neutral-900 border border-dashed border-emerald-500/40 hover:border-emerald-500 p-3 rounded-xl flex items-center justify-between transition-all"
+                  aria-label="Aplicar cupom FRETEGRATIS para frete grátis"
+                  className="w-full text-left group cursor-pointer bg-neutral-900/80 hover:bg-neutral-900 border border-dashed border-emerald-500/40 hover:border-emerald-500 p-3 rounded-xl flex items-center justify-between transition-all focus:outline-none focus:ring-2 focus:ring-emerald-400"
                 >
                   <div>
                     <div className="flex items-center gap-2">
@@ -130,24 +134,26 @@ export const Hero: React.FC = () => {
                   <span className="text-xs text-emerald-400 font-semibold group-hover:underline shrink-0">
                     {copiedCoupon === 'FRETEGRATIS' ? '✓ Aplicado' : 'Aplicar'}
                   </span>
-                </div>
+                </button>
 
                 {/* Coupon 3 */}
-                <div
+                <button
+                  type="button"
                   onClick={() => handleCopyCoupon('ELIASVIP')}
-                  className="group cursor-pointer bg-neutral-900/80 hover:bg-neutral-900 border border-dashed border-red-500/40 hover:border-red-500 p-3 rounded-xl flex items-center justify-between transition-all"
+                  aria-label="Aplicar cupom ELIASVIP de 15% de desconto"
+                  className="w-full text-left group cursor-pointer bg-neutral-900/80 hover:bg-neutral-900 border border-dashed border-red-500/40 hover:border-red-500 p-3 rounded-xl flex items-center justify-between transition-all focus:outline-none focus:ring-2 focus:ring-red-400"
                 >
                   <div>
                     <div className="flex items-center gap-2">
                       <span className="font-mono font-extrabold text-red-400 text-sm">ELIASVIP</span>
                       <span className="text-[10px] bg-red-400/10 text-red-300 font-medium px-1.5 py-0.5 rounded">15% OFF</span>
                     </div>
-                    <p className="text-xs text-neutral-400 mt-0.5">15% de desconto especial Elias Ribeiro (&gt; R$40)</p>
+                    <p className="text-xs text-neutral-400 mt-0.5">15% de desconto especial (&gt; R$40)</p>
                   </div>
                   <span className="text-xs text-red-400 font-semibold group-hover:underline shrink-0">
                     {copiedCoupon === 'ELIASVIP' ? '✓ Aplicado' : 'Aplicar'}
                   </span>
-                </div>
+                </button>
               </div>
 
             </div>

@@ -7,7 +7,6 @@ import { CategoryMenu } from './components/CategoryMenu/CategoryMenu';
 import { ProductGrid } from './components/ProductGrid/ProductGrid';
 import { CartButton } from './components/CartButton/CartButton';
 import { CartDrawer } from './components/CartButton/CartDrawer';
-import { FloatingWhatsApp } from './components/FloatingWhatsApp/FloatingWhatsApp';
 import { StoreSettingsModal } from './components/Admin/StoreSettingsModal';
 import { OrderTrackerModal } from './components/Admin/OrderTrackerModal';
 import { Footer } from './components/Footer/Footer';
@@ -31,7 +30,6 @@ export default function App() {
           {/* Floating Action Buttons & Drawers */}
           <CartButton />
           <CartDrawer />
-          <FloatingWhatsApp />
 
           {/* SaaS Management Modals */}
           <StoreSettingsModal />

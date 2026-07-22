@@ -41,7 +41,7 @@ export const CategoryMenu: React.FC = () => {
   };
 
   return (
-    <div className="sticky top-[69px] z-30 bg-neutral-900/95 backdrop-blur-md border-b border-neutral-800 shadow-md">
+    <nav aria-label="Categorias de produtos" className="sticky top-[69px] z-30 bg-neutral-900/95 backdrop-blur-md border-b border-neutral-800 shadow-md">
       <div className="max-w-7xl mx-auto px-1.5 sm:px-3 lg:px-6 py-1.5">
         
         {/* Category Scroll Container */}
@@ -54,7 +54,9 @@ export const CategoryMenu: React.FC = () => {
               <button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id)}
-                className={`relative group flex items-center gap-1 px-2 py-1 rounded-md font-medium text-[10px] sm:text-[11px] lg:text-xs whitespace-nowrap transition-all duration-200 shrink-0 border ${
+                aria-pressed={isActive}
+                aria-label={`Filtrar por ${category.name}, ${count} ${count === 1 ? 'item' : 'itens'}`}
+                className={`relative group flex items-center gap-1 px-2 py-1 rounded-md font-medium text-[10px] sm:text-[11px] lg:text-xs whitespace-nowrap transition-all duration-200 shrink-0 border focus:outline-none focus:ring-2 focus:ring-amber-400 ${
                   isActive
                     ? 'bg-gradient-to-r from-red-600 to-amber-600 text-white border-red-500/50 shadow-sm shadow-red-900/30 scale-[1.01]'
                     : 'bg-neutral-800/80 hover:bg-neutral-800 text-neutral-300 hover:text-white border-neutral-700/80'
@@ -88,6 +90,6 @@ export const CategoryMenu: React.FC = () => {
         </div>
 
       </div>
-    </div>
+    </nav>
   );
 };
