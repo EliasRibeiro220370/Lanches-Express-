@@ -14,7 +14,7 @@ Para preservar informações comerciais e a privacidade do cliente, alguns dados
 
 #
 
-🔗 COLOQUE_AQUI_A_URL_DO_PROJETO_ORIGINAL
+🔗 https://lanches-express.vercel.app
 
 Observação: Este repositório representa uma versão preparada exclusivamente para demonstração em portfólio. Algumas informações e recursos foram modificados para preservar a privacidade do cliente.
 
