@@ -31,7 +31,9 @@ Funcionalidades.
 🎨 Interface moderna
 🧩 Componentização
 🚀 Navegação intuitiva
-🛠️ Tecnologias
+
+🛠️ Tecnologias.
+--
 React
 TypeScript
 Vite
