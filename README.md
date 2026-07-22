@@ -13,7 +13,7 @@ Este repositório apresenta uma versão demonstrativa de um cardápio digital de
 Para preservar informações comerciais e a privacidade do cliente, alguns dados, imagens e configurações foram adaptados para esta versão de portfólio.
 
 🌐 Projeto Original
-
+--
 A versão original deste projeto encontra-se disponível no endereço abaixo:
 
 🔗 COLOQUE_AQUI_A_URL_DO_PROJETO_ORIGINAL
