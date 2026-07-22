@@ -1,0 +1,6 @@
+{
+  "name": "Lanches Express Showcase",
+  "description": "Cardápio Digital Interativo e Mini SaaS para Lanchonetes e Hamburguerias. Direitos reservados Elias Ribeiro.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
