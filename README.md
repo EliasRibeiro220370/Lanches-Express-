@@ -71,10 +71,9 @@ Código organizado.
 ⚡ Performance.
 --
 
-👨‍💻 Desenvolvedor Front-end especializado em React e aplicações web modernas.
---
 Elias Ribeiro
 📧 contato@inovacaodigital.tec.br
+👨‍💻 Desenvolvedor Front-end especializado em React e aplicações web modernas.
 
 📜 Licença.
 --
