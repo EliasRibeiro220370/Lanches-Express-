@@ -43,6 +43,7 @@ NPM
 
 🛠️ Tecnologias.
 --
+
 Aplicação desenvolvida utilizando componentes reutilizáveis, organização modular e foco em escalabilidade.
 
 🏗️ Arquitetura.
