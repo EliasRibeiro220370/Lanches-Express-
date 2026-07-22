@@ -19,7 +19,8 @@ Para preservar informações comerciais e a privacidade do cliente, alguns dados
 
 Observação: Este repositório representa uma versão preparada exclusivamente para demonstração em portfólio. Algumas informações e recursos foram modificados para preservar a privacidade do cliente.
 
-✨ Funcionalidades
+Funcionalidades.
+--
 🍔 Cardápio Digital
 📂 Categorias de produtos
 🔍 Visualização dos itens
