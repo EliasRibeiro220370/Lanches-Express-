@@ -52,23 +52,17 @@ Tablets
 Notebooks
 Desktop
 ♿ Acessibilidade
-HTML semântico
-Navegação intuitiva
-Contraste adequado
-Interface adaptável
+--
+HTML semântico,
+Navegação intuitiva,
+Contraste adequado,
+Interface adaptável.
+--
 ⚡ Performance
-Build otimizado com Vite
-Componentização
-Imagens otimizadas
-Código organizado
-🚀 Como executar
-git clone https://github.com/SEU-USUARIO/lanches-express-showcase
-
-cd lanches-express-showcase
-
-npm install
-
-npm run dev
+Build otimizado com Vite,
+Componentização,
+Imagens otimizadas,
+Código organizado.
 
 👨‍💻 Desenvolvedor Front-end especializado em React e aplicações web modernas.
 --
